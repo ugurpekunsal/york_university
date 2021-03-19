@@ -14,10 +14,10 @@
 //<![CDATA[
 var M = {}; M.yui = {};
 M.pageloadstarttime = new Date();
-M.cfg = {"wwwroot":"https:\/\/moodle.yorku.ca\/moodle","sesskey":"MQ0hy7IbfD","themerev":"1615607641","slasharguments":1,"theme":"edyucate","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1615607641","admin":"admin","svgicons":true,"usertimezone":"America\/Toronto","contextid":5491716,"developerdebug":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+M.cfg = {"wwwroot":"https:\/\/moodle.yorku.ca\/moodle","sesskey":"MQ0hy7IbfD","themerev":"1615607641","slasharguments":1,"theme":"edyucate","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1615607641","admin":"admin","svgicons":true,"usertimezone":"America\/Toronto","contextid":5491716,"developerdebug":false};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
 var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
 if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
-YUI_config = {"debug":true,"base":"https:\/\/moodle.yorku.ca\/moodle\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?","combine":true,"filter":"RAW","insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.yorku.ca\/moodle\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?m\/1615607641\/","combine":true,"comboBase":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?","ext":false,"root":"m\/1615607641\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":"DEBUG","modules":{"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-","moodle-core-notificaeption"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notificatiption":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notificaception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-noon-ion","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_mediagallery-base":{"requires":["base","node","selector-css3","dd-constrain","dd-proxy","dd-drop","dd-plugin","moodle-core-notification","event"]},"moodle-mod_mediagallery-mediabox":{"requires":["base","node","selector-css3"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notificatixion"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notificattion","moodle-core-notificatioon"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-format_grid-gridkeys":{"requires":["event-nav-keys"]},"moodle-format_socialwall-addactivity":{"requires":["base","node","io","moodle-core-notification-dialogue"]},"moodle-format_socialwall-postform":{"requires":["base","node","io-form","moodle-core-notification-confirm"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-ion","moodle-core-notificati"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_etitle-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_filedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_gftabs-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.yorku.ca\/moodle\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1615607641\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.yorku.ca\/moodle\/lib\/javascript.php\/1615607641\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.yorku.ca\/moodle\/lib\/javascript.php\/1615607641\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"}}};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.yorku.ca\/moodle\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?","combine":true,"filter":"RAW","insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.yorku.ca\/moodle\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?m\/1615607641\/","combine":true,"comboBase":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?","ext":false,"root":"m\/1615607641\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":"DEBUG","modules":{"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-choosernone":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-notification":{"requires":["moodle-core-notification-none","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-","moodle-core-notificaeption"]},"moodle-core-notification-none":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-none"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-none"]},"moodle-core-notificatiption":{"requires":["moodle-core-notification-none"]},"moodle-core-notificaception":{"requires":["moodle-core-notification-none"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-none","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-none","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-calendar-info":{"requires":["base","node","event-mouseenter","event-key","overlay","moodle-calendar-info-skin"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-modchooser":{"requires":["moodle-core-choosernone","moodle-course-coursebase"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-noon-ion","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-chooser":{"requires":["moodle-core-choosernone"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_mediagallery-base":{"requires":["base","node","selector-css3","dd-constrain","dd-proxy","dd-drop","dd-plugin","moodle-core-notification","event"]},"moodle-mod_mediagallery-mediabox":{"requires":["base","node","selector-css3"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notificatixion"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-choosernone","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-none"]},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notificattion","moodle-core-notificatioon"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-none","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-none","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-format_grid-gridkeys":{"requires":["event-nav-keys"]},"moodle-format_socialwall-addactivity":{"requires":["base","node","io","moodle-core-notification-none"]},"moodle-format_socialwall-postform":{"requires":["base","node","io-form","moodle-core-notification-confirm"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-none"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-ion","moodle-core-notificati"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_etitle-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_filedragdrop-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_gftabs-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-beautify":{},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.yorku.ca\/moodle\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.yorku.ca\/moodle\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1615607641\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.yorku.ca\/moodle\/lib\/javascript.php\/1615607641\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-none"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.yorku.ca\/moodle\/lib\/javascript.php\/1615607641\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.8\/MathJax.js?delayStartupUntil=configured"}}};
 M.yui.loader = {modules: {}};
 
 //]]>
@@ -570,12 +570,15 @@ document.body.className += ' jsenabled';
             data-displaycategories="off">
             <div data-region="course-view-content">
                 <div data-region="loading-placeholder-content" aria-hidden="true">
-                    <div class="card-deck dashboard-card-deck one-row" style="height: 13rem">
+                    <div class="card-deck dashboard-card-deck one-row" style="height: 20rem">
                         <div class="card dashboard-card border-0">
-                            <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
+                            <div class="card-img-top bg-pulse-grey w-100" style="height:10rem">
+                                <img src="image (2).png" alt="">
                             </div>
                             <div class="card-body pr-1 course-info-container">
-                                <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
+                                <p>SC/BIOL 2030 3.00 Biochemistry section B (Winter 2021) </p>
+                                <div class="bg-pulse-grey w-100" style="height: 1rem">
+                                </div>
                             </div>
                         </div>
                         <div class="card dashboard-card border-0">
@@ -613,125 +616,6 @@ document.body.className += ' jsenabled';
 </section>
 
   <span id="sb-6"></span><a href="#sb-7" class="sr-only sr-only-focusable">Skip Recently accessed courses</a>
-
-<section id="inst2689770"
-     class=" block block_recentlyaccessedcourses  card mb-3"
-     role="complementary"
-     data-block="recentlyaccessedcourses"
-          aria-labelledby="instance-2689770-header"
-     >
-
-    <div class="card-body p-3">
-
-            <h5 id="instance-2689770-header" class="card-title d-inline">Recently accessed courses</h5>
-
-
-        <div class="card-text content mt-3">
-            <div id="block-recentlyaccessedcourses-6054be6eefbee6054be6ec0ab04" class="block-recentlyaccessedcourses block-cards" data-region="recentlyaccessedcourses"
-     data-userid="264278">
-    <div class="container-fluid p-0">
-        <div id="recentlyaccessedcourses-view-6054be6eefbee6054be6ec0ab04" data-region="recentlyaccessedcourses-view">
-            <div data-region="loading-placeholder">
-                <div class="card-deck dashboard-card-deck one-row overflow-hidden" style="height: 13.05rem">
-                    <div class="card dashboard-card border-0">
-                        <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
-                        </div>
-                        <div class="card-body pr-1 course-info-container">
-                            <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
-                        </div>
-                    </div>
-                    <div class="card dashboard-card border-0">
-                        <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
-                        </div>
-                        <div class="card-body pr-1 course-info-container">
-                            <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
-                        </div>
-                    </div>
-                    <div class="card dashboard-card border-0">
-                        <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
-                        </div>
-                        <div class="card-body pr-1 course-info-container">
-                            <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
-                        </div>
-                    </div>
-                    <div class="card dashboard-card border-0">
-                        <div class="card-img-top bg-pulse-grey w-100" style="height: 7rem">
-                        </div>
-                        <div class="card-body pr-1 course-info-container">
-                            <div class="bg-pulse-grey w-100" style="height: 1rem"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hidden" data-region="view-content">
-                    <div class="d-flex paging-bar-container mb-3" data-region="paging-bar-container">
-                        <div
-                            data-region="paging-control-container"
-                            class="d-flex"
-                        >
-                        
-                            <nav
-                                role="navigation"
-                                id="paging-bar-6054be6eefbee6054be6ec0ab04"
-                                class=""
-                                data-region="paging-bar"
-                                data-ignore-control-while-loading=""
-                                data-hide-control-on-single-page=""
-                                    data-active-page-number="1"
-                                    data-items-per-page=""
-                                    aria-label="Pagination navigation"
-                                    data-aria-label-components-pagination-item="pagedcontentnavigationitem, core"
-                                    data-aria-label-components-pagination-active-item="pagedcontentnavigationactiveitem, core"
-                            >
-                        
-                                <ul class="pagination mb-0">
-                                                                <li class="page-item  "
-                            data-region="page-item"
-                            data-control="previous">
-                        
-                            <a href="#"
-                               class="page-link"
-                               data-region="page-link">
-                        <span class="icon-no-margin dir-rtl-hide" aria-hidden="true"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
-                        <span class="icon-no-margin dir-ltr-hide" aria-hidden="true"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
-                            </a>
-                        </li>
-                                        <li class="page-item  "
-                            data-region="page-item"
-                            data-control="next">
-                        
-                            <a href="#"
-                               class="page-link"
-                               data-region="page-link">
-                        <span class="icon-no-margin dir-rtl-hide" aria-hidden="true"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true"  ></i></span>
-                        <span class="icon-no-margin dir-ltr-hide" aria-hidden="true"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true"  ></i></span>
-                            </a>
-                        </li>
-        </ul>
-                            </nav>
-                        </div>
-                    </div>
-                        
-        <div class="card-deck dashboard-card-deck one-row fixed-width-cards justify-content-center overflow-hidden" data-region="card-deck" role="list">
-        </div>
-    </div>
-            <div class="hidden text-xs-center text-center mt-3" data-region="empty-message">
-                <img class="empty-placeholder-image-lg mt-1"
-                    src="https://moodle.yorku.ca/moodle/theme/image.php/edyucate/block_recentlyaccessedcourses/1615607641/courses"
-                    alt="No recent courses"
-                    role="presentation">
-                <p class="text-muted mt-3">No recent courses</p>
-            </div>
-        </div>
-    </div>
-</div>
-            <div class="footer"></div>
-            
-        </div>
-
-    </div>
-
-</section>
 
   <span id="sb-7"></span><a href="#sb-8" class="sr-only sr-only-focusable">Skip Private files</a>
 
@@ -1640,7 +1524,7 @@ document.body.className += ' jsenabled';
             </div>
             <div
                 class="hidden position-absolute"
-                data-region="confirm-dialogue-container"
+                data-region="confirm-none-container"
                 style="top: 0; bottom: -1px; right: 0; left: 0; background: rgba(0,0,0,0.3);"
             ></div>
         </div>        <div class="border-bottom px-2 py-3" aria-hidden="false"  data-region="view-overview">
@@ -1870,7 +1754,7 @@ document.body.className += ' jsenabled';
                     <div class="hidden text-center p-3" data-region="more-messages-loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
 </div>
                 </div>
-                <div class="p-4 w-100 h-100 hidden position-absolute" data-region="confirm-dialogue-container" style="top: 0; background: rgba(0,0,0,0.3);">
+                <div class="p-4 w-100 h-100 hidden position-absolute" data-region="confirm-none-container" style="top: 0; background: rgba(0,0,0,0.3);">
                     
                     /
                 </div>
@@ -2517,7 +2401,7 @@ document.body.className += ' jsenabled';
                     <p data-region="title"></p>
                     <p class="text-muted" data-region="text"></p>
                     <button type="button" class="btn btn-primary btn-block" data-action="request-add-contact">
-                        <span data-region="dialogue-button-text">Send contact request</span>
+                        <span data-region="none-button-text">Send contact request</span>
                         <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
 </span>
                     </button>
@@ -2528,7 +2412,7 @@ document.body.className += ' jsenabled';
                 <div class="p-3 bg-white">
                     <p class="text-muted" data-region="text">You have blocked this user.</p>
                     <button type="button" class="btn btn-primary btn-block" data-action="request-unblock">
-                        <span data-region="dialogue-button-text">Unblock user</span>
+                        <span data-region="none-button-text">Unblock user</span>
                         <span class="hidden" data-region="loading-icon-container"><span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
 </span>
                     </button>
@@ -2547,7 +2431,7 @@ document.body.className += ' jsenabled';
                 </div>            </div>
             <div
                 class="hidden position-absolute"
-                data-region="confirm-dialogue-container"
+                data-region="confirm-none-container"
                 style="top: -1px; bottom: 0; right: 0; left: 0; background: rgba(0,0,0,0.3);"
             ></div>
         </div>            <div data-region="view-overview" class="text-center">
@@ -2596,7 +2480,7 @@ document.body.className += ' jsenabled';
             <div id="course-footer"></div>
     
     
-            <div class="logininfo">You are logged in as <a href="https://moodle.yorku.ca/moodle/user/profile.php?id=264278" title="View profile">Salma Sohrabi</a> (<a href="https://moodle.yorku.ca/moodle/login/logout.php?sesskey=MQ0hy7IbfD">Log out</a>)</div>
+            <div class="logininfo">You are logged in as <a href="https://moodle.yorku.ca/moodle/user/profile.php?id=264278" title="View profile">Saba Khalilzadeh</a> (<a href="https://moodle.yorku.ca/moodle/login/logout.php?sesskey=MQ0hy7IbfD">Log out</a>)</div>
             <div class="tool_usertours-resettourcontainer"></div>
             <div class="homelink"><a href="https://moodle.yorku.ca/moodle/">Home</a></div>
             <nav class="nav navbar-nav d-md-none" aria-label="Custom menu">
@@ -2605,9 +2489,6 @@ document.body.className += ' jsenabled';
             </nav>
             <a href="https://download.moodle.org/mobile?version=2019052006.04&amp;lang=en&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Get the mobile app</a><div style="color:#fff;font-size:8px;text-align:right;">sextus
 </div>
-            
-<script type="text/javascript"> window.lpTag=window.lpTag||{};if(typeof window.lpTag._tagCount==='undefined'){window.lpTag={site:'8169955'||'',section:lpTag.section||'',autoStart:lpTag.autoStart===false?false:true,ovr:lpTag.ovr||{},_v:'1.5.1',_tagCount:1,protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn);},0);},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json);},1);}},defer:function(fn,fnType){if(fnType==0){this._defB=this._defB||[];this._defB.push(fn);}else if(fnType==1){this._defT=this._defT||[];this._defT.push(fn);}else{this._defL=this._defL||[];this._defL.push(fn);}},load:function(src,chr,id){var t=this;setTimeout(function(){t._load(src,chr,id);},0);},_load:function(src,chr,id){var url=src;if(!src){url=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site;}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id);}s.setAttribute('src',url);document.getElementsByTagName('head').item(0).appendChild(s);},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady');});}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady');},false);window.addEventListener('load',function(){that._domReady('domReady');},false);}if(typeof(window._lptStop)=='undefined'){this.load();}},start:function(){this.autoStart=true;},_domReady:function(n){if(!this.isDom){this.isDom=true;this.events.trigger('LPT','DOM_READY',{t:n});}this._timing[n]=(new Date()).getTime();},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],ev:lpTag.ev||[]};lpTag.init();}else{window.lpTag._tagCount+=1;} </script>
-
 
 
 <script type="text/javascript">
