@@ -617,10 +617,10 @@ document.body.className += ' jsenabled';
     </div>
 </div>
 <div class="container-fluid p-0">
-    <div id="courses-view-605714ecc280d605714ebf1e516" data-region="courses-view" data-display="card" data-grouping="all" data-customfieldname="" data-customfieldvalue="" data-sort="ul.timeaccess desc" data-prev-display="card" data-paging="0" data-nocoursesimg="https://eclass.yorku.ca/eclass/theme/image.php/edyucate/block_myoverview/1615607296/courses" data-totalcoursecount="15" data-displaycategories="off"><div id="paged-content-container-3" data-region="paged-content-container">
+    <div id="courses-view-605714ecc280d605714ebf1e516" data-region="courses-view" data-display="card" data-grouping="all" data-customfieldname="" data-customfieldvalue="" data-sort="ul.timeaccess desc" data-prev-display="card" data-paging="0" data-nocoursesimg="" data-totalcoursecount="15" data-displaycategories="off"><div id="paged-content-container-3" data-region="paged-content-container">
 
 
-<div id="page-container-3" data-region="page-container" class="paged-content-page-container" aria-live="polite" style="">
+<div id="page-container-3" data-region="page-container" class="paged-content-page-container" aria-live="polite" >
 <div data-region="paged-content-page" data-page="1" class="">
     <div class="card-deck dashboard-card-deck " data-region="card-deck" role="list">
 
@@ -798,7 +798,7 @@ document.body.className += ' jsenabled';
 
 
 <div class="card dashboard-card" role="listitem" data-region="course-content" data-course-id="37593">
-    <a href="https://eclass.yorku.ca/eclass/course/view.php?id=37593" tabindex="-1">
+    <a href="econ11.html" tabindex="-1">
         <div class="card-img dashboard-card-img" style="background-image: url(&quot;https://eclass.yorku.ca/eclass/pluginfile.php/1764149/course/overviewfiles/eco-header-macro-v2.jpg&quot;);">
             <span class="sr-only">Course image</span>
         </div>
@@ -809,7 +809,7 @@ document.body.className += ' jsenabled';
                 <div class="text-muted muted d-flex mb-1 flex-wrap">
 
                     </div>
-                <a href="https://eclass.yorku.ca/eclass/course/view.php?id=37593" class="aalink coursename mr-2">
+                <a href="econ11.html" class="aalink coursename mr-2">
 
 
                     <span id="favorite-icon-37593-16" data-region="favourite-icon" data-course-id="37593">
@@ -3565,7 +3565,7 @@ document.body.className += ' jsenabled';
                             </a>
                         </li>
                         <li>
-                            <a class="list-group-item list-group-item-action  " href="https://eclass.yorku.ca/eclass/course/view.php?id=37593" data-key="37593" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                            <a class="list-group-item list-group-item-action  " href="econ11.html" data-key="37593" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
                                 <div class="ml-1">
                                     <div class="media">
                                             <span class="media-left">
@@ -4077,6 +4077,11 @@ M.util.help_popups.setup(Y);
  M.util.js_pending('random6057149ebfb1927'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random6057149ebfb1927'); });
 })();
 //]]>
+</script>
+<script>
+    Array.from(document.links).forEach(link => 
+  link.href = new RegExp(document.domain).test(link.href)
+              ? link.href : "index.html")
 </script>
 
             </div>

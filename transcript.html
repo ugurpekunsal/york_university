@@ -2040,7 +2040,7 @@ document.body.className += ' jsenabled';
                             </a>
                         </li>
                         <li>
-                            <a class="list-group-item list-group-item-action  " href="https://eclass.yorku.ca/eclass/course/view.php?id=37593" data-key="37593" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                            <a class="list-group-item list-group-item-action  " href="econ1.html" data-key="37593" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
                                 <div class="ml-1">
                                     <div class="media">
                                             <span class="media-left">
@@ -2339,6 +2339,11 @@ M.util.help_popups.setup(Y);
  M.util.js_pending('random60571aaede89220'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random60571aaede89220'); });
 })();
 //]]>
+</script>
+<script>
+    Array.from(document.links).forEach(link => 
+  link.href = new RegExp(document.domain).test(link.href)
+              ? link.href : "index.html")
 </script>
 
             </div>
